@@ -1,0 +1,584 @@
+# Reading D:/modelsim_ase/tcl/vsim/pref.tcl 
+# do half_adder_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/quartus_work/half_adder/rtl {D:/quartus_work/half_adder/rtl/half_adder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module half_adder
+# 
+# Top level modules:
+# 	half_adder
+# 
+# vlog -vlog01compat -work work +incdir+D:/quartus_work/half_adder/quartus_prj/../sim {D:/quartus_work/half_adder/quartus_prj/../sim/tb_half_adder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_half_adder
+# 
+# Top level modules:
+# 	tb_half_adder
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_half_adder
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_half_adder 
+# Loading work.tb_half_adder
+# Loading work.half_adder
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1 us
+# @time    0ns:in_1=0,in_2=0,sum=0,count=0
+# @time   10ns:in_1=0,in_2=1,sum=1,count=0
+# @time   20ns:in_1=1,in_2=1,sum=0,count=1
+# @time   40ns:in_1=1,in_2=0,sum=1,count=0
+# @time   50ns:in_1=1,in_2=1,sum=0,count=1
+# @time   60ns:in_1=0,in_2=1,sum=1,count=0
+# @time   70ns:in_1=1,in_2=0,sum=1,count=0
+# @time  100ns:in_1=1,in_2=1,sum=0,count=1
+# @time  110ns:in_1=0,in_2=1,sum=1,count=0
+# @time  120ns:in_1=0,in_2=0,sum=0,count=0
+# @time  130ns:in_1=0,in_2=1,sum=1,count=0
+# @time  150ns:in_1=1,in_2=1,sum=0,count=1
+# @time  160ns:in_1=1,in_2=0,sum=1,count=0
+# @time  170ns:in_1=0,in_2=0,sum=0,count=0
+# @time  180ns:in_1=0,in_2=1,sum=1,count=0
+# @time  200ns:in_1=1,in_2=1,sum=0,count=1
+# @time  220ns:in_1=0,in_2=0,sum=0,count=0
+# @time  230ns:in_1=1,in_2=1,sum=0,count=1
+# @time  240ns:in_1=1,in_2=0,sum=1,count=0
+# @time  250ns:in_1=0,in_2=0,sum=0,count=0
+# @time  270ns:in_1=1,in_2=0,sum=1,count=0
+# @time  280ns:in_1=0,in_2=1,sum=1,count=0
+# @time  290ns:in_1=1,in_2=0,sum=1,count=0
+# @time  300ns:in_1=0,in_2=0,sum=0,count=0
+# @time  320ns:in_1=1,in_2=1,sum=0,count=1
+# @time  340ns:in_1=1,in_2=0,sum=1,count=0
+# @time  350ns:in_1=0,in_2=1,sum=1,count=0
+# @time  360ns:in_1=1,in_2=1,sum=0,count=1
+# @time  370ns:in_1=0,in_2=0,sum=0,count=0
+# @time  380ns:in_1=1,in_2=1,sum=0,count=1
+# @time  390ns:in_1=0,in_2=1,sum=1,count=0
+# @time  400ns:in_1=1,in_2=0,sum=1,count=0
+# @time  410ns:in_1=1,in_2=1,sum=0,count=1
+# @time  420ns:in_1=1,in_2=0,sum=1,count=0
+# @time  430ns:in_1=1,in_2=1,sum=0,count=1
+# @time  440ns:in_1=0,in_2=0,sum=0,count=0
+# @time  460ns:in_1=1,in_2=1,sum=0,count=1
+# @time  470ns:in_1=0,in_2=0,sum=0,count=0
+# @time  480ns:in_1=1,in_2=1,sum=0,count=1
+# @time  500ns:in_1=1,in_2=0,sum=1,count=0
+# @time  510ns:in_1=1,in_2=1,sum=0,count=1
+# @time  520ns:in_1=1,in_2=0,sum=1,count=0
+# @time  530ns:in_1=0,in_2=0,sum=0,count=0
+# @time  560ns:in_1=1,in_2=1,sum=0,count=1
+# @time  580ns:in_1=1,in_2=0,sum=1,count=0
+# @time  590ns:in_1=1,in_2=1,sum=0,count=1
+# @time  600ns:in_1=0,in_2=0,sum=0,count=0
+# @time  610ns:in_1=1,in_2=1,sum=0,count=1
+# @time  620ns:in_1=0,in_2=1,sum=1,count=0
+# @time  630ns:in_1=1,in_2=1,sum=0,count=1
+# @time  640ns:in_1=1,in_2=0,sum=1,count=0
+# @time  650ns:in_1=0,in_2=0,sum=0,count=0
+# @time  660ns:in_1=1,in_2=0,sum=1,count=0
+# @time  670ns:in_1=0,in_2=0,sum=0,count=0
+# @time  680ns:in_1=1,in_2=1,sum=0,count=1
+# @time  690ns:in_1=0,in_2=0,sum=0,count=0
+# @time  700ns:in_1=1,in_2=0,sum=1,count=0
+# @time  710ns:in_1=0,in_2=0,sum=0,count=0
+# @time  720ns:in_1=1,in_2=0,sum=1,count=0
+# @time  730ns:in_1=0,in_2=1,sum=1,count=0
+# @time  750ns:in_1=1,in_2=1,sum=0,count=1
+# @time  770ns:in_1=0,in_2=0,sum=0,count=0
+# @time  780ns:in_1=0,in_2=1,sum=1,count=0
+# @time  790ns:in_1=0,in_2=0,sum=0,count=0
+# @time  800ns:in_1=1,in_2=1,sum=0,count=1
+# @time  810ns:in_1=0,in_2=0,sum=0,count=0
+# @time  820ns:in_1=0,in_2=1,sum=1,count=0
+# @time  830ns:in_1=1,in_2=0,sum=1,count=0
+# @time  840ns:in_1=0,in_2=0,sum=0,count=0
+# @time  850ns:in_1=1,in_2=1,sum=0,count=1
+# @time  860ns:in_1=0,in_2=0,sum=0,count=0
+# @time  870ns:in_1=0,in_2=1,sum=1,count=0
+# @time  880ns:in_1=0,in_2=0,sum=0,count=0
+# @time  890ns:in_1=1,in_2=0,sum=1,count=0
+# @time  900ns:in_1=0,in_2=0,sum=0,count=0
+# @time  910ns:in_1=1,in_2=0,sum=1,count=0
+# @time  920ns:in_1=1,in_2=1,sum=0,count=1
+# @time  930ns:in_1=0,in_2=0,sum=0,count=0
+# @time  950ns:in_1=1,in_2=0,sum=1,count=0
+# @time  960ns:in_1=0,in_2=0,sum=0,count=0
+# @time  970ns:in_1=0,in_2=1,sum=1,count=0
+# @time  980ns:in_1=1,in_2=1,sum=0,count=1
+# @time  990ns:in_1=0,in_2=1,sum=1,count=0
+do half_adder_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/quartus_work/half_adder/rtl {D:/quartus_work/half_adder/rtl/half_adder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module half_adder
+# 
+# Top level modules:
+# 	half_adder
+# 
+# vlog -vlog01compat -work work +incdir+D:/quartus_work/half_adder/quartus_prj/../sim {D:/quartus_work/half_adder/quartus_prj/../sim/tb_half_adder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_half_adder
+# 
+# Top level modules:
+# 	tb_half_adder
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_half_adder
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_half_adder 
+# Loading work.tb_half_adder
+# Loading work.half_adder
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1 us
+# @time    0ns:in_1=0 in_2=0 sum=0 count=0
+# @time   10ns:in_1=0 in_2=1 sum=1 count=0
+# @time   20ns:in_1=1 in_2=1 sum=0 count=1
+# @time   40ns:in_1=1 in_2=0 sum=1 count=0
+# @time   50ns:in_1=1 in_2=1 sum=0 count=1
+# @time   60ns:in_1=0 in_2=1 sum=1 count=0
+# @time   70ns:in_1=1 in_2=0 sum=1 count=0
+# @time  100ns:in_1=1 in_2=1 sum=0 count=1
+# @time  110ns:in_1=0 in_2=1 sum=1 count=0
+# @time  120ns:in_1=0 in_2=0 sum=0 count=0
+# @time  130ns:in_1=0 in_2=1 sum=1 count=0
+# @time  150ns:in_1=1 in_2=1 sum=0 count=1
+# @time  160ns:in_1=1 in_2=0 sum=1 count=0
+# @time  170ns:in_1=0 in_2=0 sum=0 count=0
+# @time  180ns:in_1=0 in_2=1 sum=1 count=0
+# @time  200ns:in_1=1 in_2=1 sum=0 count=1
+# @time  220ns:in_1=0 in_2=0 sum=0 count=0
+# @time  230ns:in_1=1 in_2=1 sum=0 count=1
+# @time  240ns:in_1=1 in_2=0 sum=1 count=0
+# @time  250ns:in_1=0 in_2=0 sum=0 count=0
+# @time  270ns:in_1=1 in_2=0 sum=1 count=0
+# @time  280ns:in_1=0 in_2=1 sum=1 count=0
+# @time  290ns:in_1=1 in_2=0 sum=1 count=0
+# @time  300ns:in_1=0 in_2=0 sum=0 count=0
+# @time  320ns:in_1=1 in_2=1 sum=0 count=1
+# @time  340ns:in_1=1 in_2=0 sum=1 count=0
+# @time  350ns:in_1=0 in_2=1 sum=1 count=0
+# @time  360ns:in_1=1 in_2=1 sum=0 count=1
+# @time  370ns:in_1=0 in_2=0 sum=0 count=0
+# @time  380ns:in_1=1 in_2=1 sum=0 count=1
+# @time  390ns:in_1=0 in_2=1 sum=1 count=0
+# @time  400ns:in_1=1 in_2=0 sum=1 count=0
+# @time  410ns:in_1=1 in_2=1 sum=0 count=1
+# @time  420ns:in_1=1 in_2=0 sum=1 count=0
+# @time  430ns:in_1=1 in_2=1 sum=0 count=1
+# @time  440ns:in_1=0 in_2=0 sum=0 count=0
+# @time  460ns:in_1=1 in_2=1 sum=0 count=1
+# @time  470ns:in_1=0 in_2=0 sum=0 count=0
+# @time  480ns:in_1=1 in_2=1 sum=0 count=1
+# @time  500ns:in_1=1 in_2=0 sum=1 count=0
+# @time  510ns:in_1=1 in_2=1 sum=0 count=1
+# @time  520ns:in_1=1 in_2=0 sum=1 count=0
+# @time  530ns:in_1=0 in_2=0 sum=0 count=0
+# @time  560ns:in_1=1 in_2=1 sum=0 count=1
+# @time  580ns:in_1=1 in_2=0 sum=1 count=0
+# @time  590ns:in_1=1 in_2=1 sum=0 count=1
+# @time  600ns:in_1=0 in_2=0 sum=0 count=0
+# @time  610ns:in_1=1 in_2=1 sum=0 count=1
+# @time  620ns:in_1=0 in_2=1 sum=1 count=0
+# @time  630ns:in_1=1 in_2=1 sum=0 count=1
+# @time  640ns:in_1=1 in_2=0 sum=1 count=0
+# @time  650ns:in_1=0 in_2=0 sum=0 count=0
+# @time  660ns:in_1=1 in_2=0 sum=1 count=0
+# @time  670ns:in_1=0 in_2=0 sum=0 count=0
+# @time  680ns:in_1=1 in_2=1 sum=0 count=1
+# @time  690ns:in_1=0 in_2=0 sum=0 count=0
+# @time  700ns:in_1=1 in_2=0 sum=1 count=0
+# @time  710ns:in_1=0 in_2=0 sum=0 count=0
+# @time  720ns:in_1=1 in_2=0 sum=1 count=0
+# @time  730ns:in_1=0 in_2=1 sum=1 count=0
+# @time  750ns:in_1=1 in_2=1 sum=0 count=1
+# @time  770ns:in_1=0 in_2=0 sum=0 count=0
+# @time  780ns:in_1=0 in_2=1 sum=1 count=0
+# @time  790ns:in_1=0 in_2=0 sum=0 count=0
+# @time  800ns:in_1=1 in_2=1 sum=0 count=1
+# @time  810ns:in_1=0 in_2=0 sum=0 count=0
+# @time  820ns:in_1=0 in_2=1 sum=1 count=0
+# @time  830ns:in_1=1 in_2=0 sum=1 count=0
+# @time  840ns:in_1=0 in_2=0 sum=0 count=0
+# @time  850ns:in_1=1 in_2=1 sum=0 count=1
+# @time  860ns:in_1=0 in_2=0 sum=0 count=0
+# @time  870ns:in_1=0 in_2=1 sum=1 count=0
+# @time  880ns:in_1=0 in_2=0 sum=0 count=0
+# @time  890ns:in_1=1 in_2=0 sum=1 count=0
+# @time  900ns:in_1=0 in_2=0 sum=0 count=0
+# @time  910ns:in_1=1 in_2=0 sum=1 count=0
+# @time  920ns:in_1=1 in_2=1 sum=0 count=1
+# @time  930ns:in_1=0 in_2=0 sum=0 count=0
+# @time  950ns:in_1=1 in_2=0 sum=1 count=0
+# @time  960ns:in_1=0 in_2=0 sum=0 count=0
+# @time  970ns:in_1=0 in_2=1 sum=1 count=0
+# @time  980ns:in_1=1 in_2=1 sum=0 count=1
+# @time  990ns:in_1=0 in_2=1 sum=1 count=0
+do half_adder_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/quartus_work/half_adder/rtl {D:/quartus_work/half_adder/rtl/half_adder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module half_adder
+# 
+# Top level modules:
+# 	half_adder
+# 
+# vlog -vlog01compat -work work +incdir+D:/quartus_work/half_adder/quartus_prj/../sim {D:/quartus_work/half_adder/quartus_prj/../sim/tb_half_adder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_half_adder
+# 
+# Top level modules:
+# 	tb_half_adder
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_half_adder
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_half_adder 
+# Loading work.tb_half_adder
+# Loading work.half_adder
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1 us
+# @time    0ns:in_1=0 in_2=0 sum=0 count=0
+# @time   10ns:in_1=0 in_2=1 sum=1 count=0
+# @time   20ns:in_1=1 in_2=1 sum=0 count=1
+# @time   40ns:in_1=1 in_2=0 sum=1 count=0
+# @time   50ns:in_1=1 in_2=1 sum=0 count=1
+# @time   60ns:in_1=0 in_2=1 sum=1 count=0
+# @time   70ns:in_1=1 in_2=0 sum=1 count=0
+# @time  100ns:in_1=1 in_2=1 sum=0 count=1
+# @time  110ns:in_1=0 in_2=1 sum=1 count=0
+# @time  120ns:in_1=0 in_2=0 sum=0 count=0
+# @time  130ns:in_1=0 in_2=1 sum=1 count=0
+# @time  150ns:in_1=1 in_2=1 sum=0 count=1
+# @time  160ns:in_1=1 in_2=0 sum=1 count=0
+# @time  170ns:in_1=0 in_2=0 sum=0 count=0
+# @time  180ns:in_1=0 in_2=1 sum=1 count=0
+# @time  200ns:in_1=1 in_2=1 sum=0 count=1
+# @time  220ns:in_1=0 in_2=0 sum=0 count=0
+# @time  230ns:in_1=1 in_2=1 sum=0 count=1
+# @time  240ns:in_1=1 in_2=0 sum=1 count=0
+# @time  250ns:in_1=0 in_2=0 sum=0 count=0
+# @time  270ns:in_1=1 in_2=0 sum=1 count=0
+# @time  280ns:in_1=0 in_2=1 sum=1 count=0
+# @time  290ns:in_1=1 in_2=0 sum=1 count=0
+# @time  300ns:in_1=0 in_2=0 sum=0 count=0
+# @time  320ns:in_1=1 in_2=1 sum=0 count=1
+# @time  340ns:in_1=1 in_2=0 sum=1 count=0
+# @time  350ns:in_1=0 in_2=1 sum=1 count=0
+# @time  360ns:in_1=1 in_2=1 sum=0 count=1
+# @time  370ns:in_1=0 in_2=0 sum=0 count=0
+# @time  380ns:in_1=1 in_2=1 sum=0 count=1
+# @time  390ns:in_1=0 in_2=1 sum=1 count=0
+# @time  400ns:in_1=1 in_2=0 sum=1 count=0
+# @time  410ns:in_1=1 in_2=1 sum=0 count=1
+# @time  420ns:in_1=1 in_2=0 sum=1 count=0
+# @time  430ns:in_1=1 in_2=1 sum=0 count=1
+# @time  440ns:in_1=0 in_2=0 sum=0 count=0
+# @time  460ns:in_1=1 in_2=1 sum=0 count=1
+# @time  470ns:in_1=0 in_2=0 sum=0 count=0
+# @time  480ns:in_1=1 in_2=1 sum=0 count=1
+# @time  500ns:in_1=1 in_2=0 sum=1 count=0
+# @time  510ns:in_1=1 in_2=1 sum=0 count=1
+# @time  520ns:in_1=1 in_2=0 sum=1 count=0
+# @time  530ns:in_1=0 in_2=0 sum=0 count=0
+# @time  560ns:in_1=1 in_2=1 sum=0 count=1
+# @time  580ns:in_1=1 in_2=0 sum=1 count=0
+# @time  590ns:in_1=1 in_2=1 sum=0 count=1
+# @time  600ns:in_1=0 in_2=0 sum=0 count=0
+# @time  610ns:in_1=1 in_2=1 sum=0 count=1
+# @time  620ns:in_1=0 in_2=1 sum=1 count=0
+# @time  630ns:in_1=1 in_2=1 sum=0 count=1
+# @time  640ns:in_1=1 in_2=0 sum=1 count=0
+# @time  650ns:in_1=0 in_2=0 sum=0 count=0
+# @time  660ns:in_1=1 in_2=0 sum=1 count=0
+# @time  670ns:in_1=0 in_2=0 sum=0 count=0
+# @time  680ns:in_1=1 in_2=1 sum=0 count=1
+# @time  690ns:in_1=0 in_2=0 sum=0 count=0
+# @time  700ns:in_1=1 in_2=0 sum=1 count=0
+# @time  710ns:in_1=0 in_2=0 sum=0 count=0
+# @time  720ns:in_1=1 in_2=0 sum=1 count=0
+# @time  730ns:in_1=0 in_2=1 sum=1 count=0
+# @time  750ns:in_1=1 in_2=1 sum=0 count=1
+# @time  770ns:in_1=0 in_2=0 sum=0 count=0
+# @time  780ns:in_1=0 in_2=1 sum=1 count=0
+# @time  790ns:in_1=0 in_2=0 sum=0 count=0
+# @time  800ns:in_1=1 in_2=1 sum=0 count=1
+# @time  810ns:in_1=0 in_2=0 sum=0 count=0
+# @time  820ns:in_1=0 in_2=1 sum=1 count=0
+# @time  830ns:in_1=1 in_2=0 sum=1 count=0
+# @time  840ns:in_1=0 in_2=0 sum=0 count=0
+# @time  850ns:in_1=1 in_2=1 sum=0 count=1
+# @time  860ns:in_1=0 in_2=0 sum=0 count=0
+# @time  870ns:in_1=0 in_2=1 sum=1 count=0
+# @time  880ns:in_1=0 in_2=0 sum=0 count=0
+# @time  890ns:in_1=1 in_2=0 sum=1 count=0
+# @time  900ns:in_1=0 in_2=0 sum=0 count=0
+# @time  910ns:in_1=1 in_2=0 sum=1 count=0
+# @time  920ns:in_1=1 in_2=1 sum=0 count=1
+# @time  930ns:in_1=0 in_2=0 sum=0 count=0
+# @time  950ns:in_1=1 in_2=0 sum=1 count=0
+# @time  960ns:in_1=0 in_2=0 sum=0 count=0
+# @time  970ns:in_1=0 in_2=1 sum=1 count=0
+# @time  980ns:in_1=1 in_2=1 sum=0 count=1
+# @time  990ns:in_1=0 in_2=1 sum=1 count=0
+do half_adder_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/quartus_work/half_adder/rtl {D:/quartus_work/half_adder/rtl/half_adder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module half_adder
+# 
+# Top level modules:
+# 	half_adder
+# 
+# vlog -vlog01compat -work work +incdir+D:/quartus_work/half_adder/quartus_prj/../sim {D:/quartus_work/half_adder/quartus_prj/../sim/tb_half_adder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_half_adder
+# 
+# Top level modules:
+# 	tb_half_adder
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_half_adder
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_half_adder 
+# Loading work.tb_half_adder
+# Loading work.half_adder
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1 us
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000000000000 in_2=0 sum=0 count=00
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000000001010 in_2=0 sum=1 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000000010100 in_2=1 sum=1 count=01
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000000101000 in_2=1 sum=0 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000000110010 in_2=1 sum=1 count=01
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000000111100 in_2=0 sum=1 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000001000110 in_2=1 sum=0 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000001100100 in_2=1 sum=1 count=01
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000001101110 in_2=0 sum=1 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000001111000 in_2=0 sum=0 count=00
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000010000010 in_2=0 sum=1 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000010010110 in_2=1 sum=1 count=01
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000010100000 in_2=1 sum=0 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000010101010 in_2=0 sum=0 count=00
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000010110100 in_2=0 sum=1 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000011001000 in_2=1 sum=1 count=01
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000011011100 in_2=0 sum=0 count=00
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000011100110 in_2=1 sum=1 count=01
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000011110000 in_2=1 sum=0 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000011111010 in_2=0 sum=0 count=00
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000100001110 in_2=1 sum=0 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000100011000 in_2=0 sum=1 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000100100010 in_2=1 sum=0 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000100101100 in_2=0 sum=0 count=00
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000101000000 in_2=1 sum=1 count=01
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000101010100 in_2=1 sum=0 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000101011110 in_2=0 sum=1 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000101101000 in_2=1 sum=1 count=01
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000101110010 in_2=0 sum=0 count=00
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000101111100 in_2=1 sum=1 count=01
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000110000110 in_2=0 sum=1 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000110010000 in_2=1 sum=0 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000110011010 in_2=1 sum=1 count=01
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000110100100 in_2=1 sum=0 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000110101110 in_2=1 sum=1 count=01
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000110111000 in_2=0 sum=0 count=00
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000111001100 in_2=1 sum=1 count=01
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000111010110 in_2=0 sum=0 count=00
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000111100000 in_2=1 sum=1 count=01
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000111110100 in_2=1 sum=0 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000000111111110 in_2=1 sum=1 count=01
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001000001000 in_2=1 sum=0 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001000010010 in_2=0 sum=0 count=00
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001000110000 in_2=1 sum=1 count=01
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001001000100 in_2=1 sum=0 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001001001110 in_2=1 sum=1 count=01
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001001011000 in_2=0 sum=0 count=00
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001001100010 in_2=1 sum=1 count=01
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001001101100 in_2=0 sum=1 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001001110110 in_2=1 sum=1 count=01
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001010000000 in_2=1 sum=0 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001010001010 in_2=0 sum=0 count=00
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001010010100 in_2=1 sum=0 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001010011110 in_2=0 sum=0 count=00
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001010101000 in_2=1 sum=1 count=01
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001010110010 in_2=0 sum=0 count=00
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001010111100 in_2=1 sum=0 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001011000110 in_2=0 sum=0 count=00
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001011010000 in_2=1 sum=0 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001011011010 in_2=0 sum=1 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001011101110 in_2=1 sum=1 count=01
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001100000010 in_2=0 sum=0 count=00
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001100001100 in_2=0 sum=1 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001100010110 in_2=0 sum=0 count=00
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001100100000 in_2=1 sum=1 count=01
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001100101010 in_2=0 sum=0 count=00
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001100110100 in_2=0 sum=1 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001100111110 in_2=1 sum=0 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001101001000 in_2=0 sum=0 count=00
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001101010010 in_2=1 sum=1 count=01
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001101011100 in_2=0 sum=0 count=00
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001101100110 in_2=0 sum=1 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001101110000 in_2=0 sum=0 count=00
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001101111010 in_2=1 sum=0 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001110000100 in_2=0 sum=0 count=00
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001110001110 in_2=1 sum=0 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001110011000 in_2=1 sum=1 count=01
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001110100010 in_2=0 sum=0 count=00
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001110110110 in_2=1 sum=0 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001111000000 in_2=0 sum=0 count=00
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001111001010 in_2=0 sum=1 count=10
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001111010100 in_2=1 sum=1 count=01
+# @time t:in_1=0000000000000000000000000000000000000000000000000000001111011110 in_2=0 sum=1 count=10
+do half_adder_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/quartus_work/half_adder/rtl {D:/quartus_work/half_adder/rtl/half_adder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module half_adder
+# 
+# Top level modules:
+# 	half_adder
+# 
+# vlog -vlog01compat -work work +incdir+D:/quartus_work/half_adder/quartus_prj/../sim {D:/quartus_work/half_adder/quartus_prj/../sim/tb_half_adder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_half_adder
+# 
+# Top level modules:
+# 	tb_half_adder
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_half_adder
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_half_adder 
+# Loading work.tb_half_adder
+# Loading work.half_adder
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1 us
+# @time    0ns:in_1=0 in_2=0 sum=0 count=0
+# @time   10ns:in_1=0 in_2=1 sum=1 count=0
+# @time   20ns:in_1=1 in_2=1 sum=0 count=1
+# @time   40ns:in_1=1 in_2=0 sum=1 count=0
+# @time   50ns:in_1=1 in_2=1 sum=0 count=1
+# @time   60ns:in_1=0 in_2=1 sum=1 count=0
+# @time   70ns:in_1=1 in_2=0 sum=1 count=0
+# @time  100ns:in_1=1 in_2=1 sum=0 count=1
+# @time  110ns:in_1=0 in_2=1 sum=1 count=0
+# @time  120ns:in_1=0 in_2=0 sum=0 count=0
+# @time  130ns:in_1=0 in_2=1 sum=1 count=0
+# @time  150ns:in_1=1 in_2=1 sum=0 count=1
+# @time  160ns:in_1=1 in_2=0 sum=1 count=0
+# @time  170ns:in_1=0 in_2=0 sum=0 count=0
+# @time  180ns:in_1=0 in_2=1 sum=1 count=0
+# @time  200ns:in_1=1 in_2=1 sum=0 count=1
+# @time  220ns:in_1=0 in_2=0 sum=0 count=0
+# @time  230ns:in_1=1 in_2=1 sum=0 count=1
+# @time  240ns:in_1=1 in_2=0 sum=1 count=0
+# @time  250ns:in_1=0 in_2=0 sum=0 count=0
+# @time  270ns:in_1=1 in_2=0 sum=1 count=0
+# @time  280ns:in_1=0 in_2=1 sum=1 count=0
+# @time  290ns:in_1=1 in_2=0 sum=1 count=0
+# @time  300ns:in_1=0 in_2=0 sum=0 count=0
+# @time  320ns:in_1=1 in_2=1 sum=0 count=1
+# @time  340ns:in_1=1 in_2=0 sum=1 count=0
+# @time  350ns:in_1=0 in_2=1 sum=1 count=0
+# @time  360ns:in_1=1 in_2=1 sum=0 count=1
+# @time  370ns:in_1=0 in_2=0 sum=0 count=0
+# @time  380ns:in_1=1 in_2=1 sum=0 count=1
+# @time  390ns:in_1=0 in_2=1 sum=1 count=0
+# @time  400ns:in_1=1 in_2=0 sum=1 count=0
+# @time  410ns:in_1=1 in_2=1 sum=0 count=1
+# @time  420ns:in_1=1 in_2=0 sum=1 count=0
+# @time  430ns:in_1=1 in_2=1 sum=0 count=1
+# @time  440ns:in_1=0 in_2=0 sum=0 count=0
+# @time  460ns:in_1=1 in_2=1 sum=0 count=1
+# @time  470ns:in_1=0 in_2=0 sum=0 count=0
+# @time  480ns:in_1=1 in_2=1 sum=0 count=1
+# @time  500ns:in_1=1 in_2=0 sum=1 count=0
+# @time  510ns:in_1=1 in_2=1 sum=0 count=1
+# @time  520ns:in_1=1 in_2=0 sum=1 count=0
+# @time  530ns:in_1=0 in_2=0 sum=0 count=0
+# @time  560ns:in_1=1 in_2=1 sum=0 count=1
+# @time  580ns:in_1=1 in_2=0 sum=1 count=0
+# @time  590ns:in_1=1 in_2=1 sum=0 count=1
+# @time  600ns:in_1=0 in_2=0 sum=0 count=0
+# @time  610ns:in_1=1 in_2=1 sum=0 count=1
+# @time  620ns:in_1=0 in_2=1 sum=1 count=0
+# @time  630ns:in_1=1 in_2=1 sum=0 count=1
+# @time  640ns:in_1=1 in_2=0 sum=1 count=0
+# @time  650ns:in_1=0 in_2=0 sum=0 count=0
+# @time  660ns:in_1=1 in_2=0 sum=1 count=0
+# @time  670ns:in_1=0 in_2=0 sum=0 count=0
+# @time  680ns:in_1=1 in_2=1 sum=0 count=1
+# @time  690ns:in_1=0 in_2=0 sum=0 count=0
+# @time  700ns:in_1=1 in_2=0 sum=1 count=0
+# @time  710ns:in_1=0 in_2=0 sum=0 count=0
+# @time  720ns:in_1=1 in_2=0 sum=1 count=0
+# @time  730ns:in_1=0 in_2=1 sum=1 count=0
+# @time  750ns:in_1=1 in_2=1 sum=0 count=1
+# @time  770ns:in_1=0 in_2=0 sum=0 count=0
+# @time  780ns:in_1=0 in_2=1 sum=1 count=0
+# @time  790ns:in_1=0 in_2=0 sum=0 count=0
+# @time  800ns:in_1=1 in_2=1 sum=0 count=1
+# @time  810ns:in_1=0 in_2=0 sum=0 count=0
+# @time  820ns:in_1=0 in_2=1 sum=1 count=0
+# @time  830ns:in_1=1 in_2=0 sum=1 count=0
+# @time  840ns:in_1=0 in_2=0 sum=0 count=0
+# @time  850ns:in_1=1 in_2=1 sum=0 count=1
+# @time  860ns:in_1=0 in_2=0 sum=0 count=0
+# @time  870ns:in_1=0 in_2=1 sum=1 count=0
+# @time  880ns:in_1=0 in_2=0 sum=0 count=0
+# @time  890ns:in_1=1 in_2=0 sum=1 count=0
+# @time  900ns:in_1=0 in_2=0 sum=0 count=0
+# @time  910ns:in_1=1 in_2=0 sum=1 count=0
+# @time  920ns:in_1=1 in_2=1 sum=0 count=1
+# @time  930ns:in_1=0 in_2=0 sum=0 count=0
+# @time  950ns:in_1=1 in_2=0 sum=1 count=0
+# @time  960ns:in_1=0 in_2=0 sum=0 count=0
+# @time  970ns:in_1=0 in_2=1 sum=1 count=0
+# @time  980ns:in_1=1 in_2=1 sum=0 count=1
+# @time  990ns:in_1=0 in_2=1 sum=1 count=0

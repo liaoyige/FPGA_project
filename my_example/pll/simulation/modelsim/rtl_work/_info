@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\quartus_work\my_example\pll\simulation\modelsim
+vpll
+!i10b 1
+!s100 1=?D8D@5_EcImnFm4Z`m:1
+IM_M0C4eQDF;jOXNcceRHU0
+Vk13@hg7DSC_^O7`CLMiSd2
+Z1 dD:\quartus_work\my_example\pll\simulation\modelsim
+w1671853995
+8D:/quartus_work/my_example/pll/rtl/pll.v
+FD:/quartus_work/my_example/pll/rtl/pll.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1671854314.940000
+!s107 D:/quartus_work/my_example/pll/rtl/pll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/quartus_work/my_example/pll/rtl|D:/quartus_work/my_example/pll/rtl/pll.v|
+!s101 -O0
+Z3 o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+D:/quartus_work/my_example/pll/rtl -O0
+vtb_pll
+I;]O1lMhN56b7iPDCBblHP1
+VmP[j40iMYCQaVRO9^dinl1
+R1
+w1671853858
+8D:/quartus_work/my_example/pll/sim/tb_pll.v
+FD:/quartus_work/my_example/pll/sim/tb_pll.v
+L0 2
+R2
+r1
+31
+R3
+!i10b 1
+!s100 37glialJV2e`l6k?1TVb11
+!s85 0
+!s108 1671854314.842000
+!s107 D:/quartus_work/my_example/pll/sim/tb_pll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/quartus_work/my_example/pll/sim|D:/quartus_work/my_example/pll/sim/tb_pll.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+D:/quartus_work/my_example/pll/sim -O0

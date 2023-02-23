@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\quartus_work\half_adder\quartus_prj\simulation\modelsim
+vhalf_adder
+IfYj`j6mo>lzCcB@nBjXUV3
+VHdT3CJJc^T@bP;FCiCBef0
+Z1 dD:\quartus_work\half_adder\quartus_prj\simulation\modelsim
+w1667544571
+8D:/quartus_work/half_adder/rtl/half_adder.v
+FD:/quartus_work/half_adder/rtl/half_adder.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 ebjjcn1oE1IMX[FW:i88h0
+!s85 0
+!s108 1667546243.825000
+!s107 D:/quartus_work/half_adder/rtl/half_adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/quartus_work/half_adder/rtl|D:/quartus_work/half_adder/rtl/half_adder.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+D:/quartus_work/half_adder/rtl -O0
+vtb_half_adder
+!i10b 1
+!s100 SE[2cQ^4JFM?d:S598hXm2
+IAQPFM613^c;oi>I2QihF60
+VBHakPoKE:ILk88P?zo;jd3
+R1
+w1667546238
+8D:/quartus_work/half_adder/quartus_prj/../sim/tb_half_adder.v
+FD:/quartus_work/half_adder/quartus_prj/../sim/tb_half_adder.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1667546243.934000
+!s107 D:/quartus_work/half_adder/quartus_prj/../sim/tb_half_adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/quartus_work/half_adder/quartus_prj/../sim|D:/quartus_work/half_adder/quartus_prj/../sim/tb_half_adder.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+D:/quartus_work/half_adder/quartus_prj/../sim -O0

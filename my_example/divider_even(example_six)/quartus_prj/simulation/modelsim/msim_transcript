@@ -1,0 +1,42 @@
+# Reading D:/modelsim_ase/tcl/vsim/pref.tcl 
+# do divider_six_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/quartus_work/my_example/divider_six/rtl {D:/quartus_work/my_example/divider_six/rtl/divider_six.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module divider_six
+# 
+# Top level modules:
+# 	divider_six
+# 
+# vlog -vlog01compat -work work +incdir+D:/quartus_work/my_example/divider_six/quartus_prj/../sim {D:/quartus_work/my_example/divider_six/quartus_prj/../sim/tb_divider_six.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_divider_six
+# 
+# Top level modules:
+# 	tb_divider_six
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_divider_six
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_divider_six 
+# Loading work.tb_divider_six
+# Loading work.divider_six
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 10 us
+restart
+run
+add wave -position insertpoint sim:/tb_divider_six/divider_six_inst1/*
+restart
+run

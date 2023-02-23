@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\quartus_work\my_example\divider_six\quartus_prj\simulation\modelsim
+vdivider_six
+IKDK0fdQ]KA63_GncW78RN1
+VMiNU?okA69d3BL6R9Kijn3
+Z1 dD:\quartus_work\my_example\divider_six\quartus_prj\simulation\modelsim
+w1667874815
+8D:/quartus_work/my_example/divider_six/rtl/divider_six.v
+FD:/quartus_work/my_example/divider_six/rtl/divider_six.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 DF^1KPUW>dzZdk^64`4a80
+!s85 0
+!s108 1667875004.859000
+!s107 D:/quartus_work/my_example/divider_six/rtl/divider_six.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/quartus_work/my_example/divider_six/rtl|D:/quartus_work/my_example/divider_six/rtl/divider_six.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+D:/quartus_work/my_example/divider_six/rtl -O0
+vtb_divider_six
+!i10b 1
+!s100 LOKKf0P5PCVJc_ERDaM@B3
+IB[2f9Y3fgbcTAmH8;17^23
+VJzFWPMTL1YLMBz[bZHG@62
+R1
+w1667874929
+8D:/quartus_work/my_example/divider_six/quartus_prj/../sim/tb_divider_six.v
+FD:/quartus_work/my_example/divider_six/quartus_prj/../sim/tb_divider_six.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1667875004.953000
+!s107 D:/quartus_work/my_example/divider_six/quartus_prj/../sim/tb_divider_six.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/quartus_work/my_example/divider_six/quartus_prj/../sim|D:/quartus_work/my_example/divider_six/quartus_prj/../sim/tb_divider_six.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+D:/quartus_work/my_example/divider_six/quartus_prj/../sim -O0

@@ -1,0 +1,457 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Full Version"
+
+// DATE "01/28/2023 13:23:12"
+
+// 
+// Device: Altera 5CEBA2F17A7 Package FBGA256
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module state_machine (
+	sys_clk,
+	sys_rst,
+	pi_money,
+	po_cola);
+input 	sys_clk;
+input 	sys_rst;
+input 	pi_money;
+output 	po_cola;
+
+// Design Ports Information
+// po_cola	=>  Location: PIN_M10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// pi_money	=>  Location: PIN_M13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// sys_clk	=>  Location: PIN_G12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// sys_rst	=>  Location: PIN_L10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire a_aQUARTUS_CREATED_GND_aI_combout;
+wire sys_clk_ainput_o;
+wire sys_clk_ainputCLKENA0_outclk;
+wire pi_money_ainput_o;
+wire state_aIDLE_a0_combout;
+wire sys_rst_ainput_o;
+wire state_aIDLE_aq;
+wire state_aONE_a0_combout;
+wire state_aONE_aq;
+wire state_aTWO_afeeder_combout;
+wire state_aTWO_aq;
+wire always1_a0_combout;
+wire po_cola_areg0_q;
+
+wire po_cola_aoutput_I_driver;
+wire sys_clk_ainput_I_driver;
+wire sys_clk_ainputCLKENA0_INCLK_driver;
+wire pi_money_ainput_I_driver;
+wire state_aIDLE_a0_DATAF_driver;
+wire sys_rst_ainput_I_driver;
+wire state_aIDLE_CLK_driver;
+wire state_aIDLE_D_driver;
+wire state_aIDLE_CLRN_driver;
+wire state_aIDLE_ENA_driver;
+wire state_aONE_a0_DATAF_driver;
+wire state_aONE_CLK_driver;
+wire state_aONE_D_driver;
+wire state_aONE_CLRN_driver;
+wire state_aONE_ENA_driver;
+wire state_aTWO_afeeder_DATAF_driver;
+wire state_aTWO_CLK_driver;
+wire state_aTWO_D_driver;
+wire state_aTWO_CLRN_driver;
+wire state_aTWO_ENA_driver;
+wire always1_a0_DATAC_driver;
+wire always1_a0_DATAF_driver;
+wire po_cola_areg0_CLK_driver;
+wire po_cola_areg0_D_driver;
+wire po_cola_areg0_CLRN_driver;
+
+cyclonev_routing_wire po_cola_aoutput_I_routing_wire_inst (
+	.datain(po_cola_areg0_q),
+	.dataout(po_cola_aoutput_I_driver));
+
+// Location: IOOBUF_X34_Y0_N19
+cyclonev_io_obuf po_cola_aoutput(
+	.i(po_cola_aoutput_I_driver),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(po_cola),
+	.obar());
+// synopsys translate_off
+defparam po_cola_aoutput.bus_hold = "false";
+defparam po_cola_aoutput.open_drain_output = "false";
+defparam po_cola_aoutput.shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_routing_wire sys_clk_ainput_I_routing_wire_inst (
+	.datain(sys_clk),
+	.dataout(sys_clk_ainput_I_driver));
+
+// Location: IOIBUF_X54_Y18_N61
+cyclonev_io_ibuf sys_clk_ainput(
+	.i(sys_clk_ainput_I_driver),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(sys_clk_ainput_o));
+// synopsys translate_off
+defparam sys_clk_ainput.bus_hold = "false";
+defparam sys_clk_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_routing_wire sys_clk_ainputCLKENA0_INCLK_routing_wire_inst (
+	.datain(sys_clk_ainput_o),
+	.dataout(sys_clk_ainputCLKENA0_INCLK_driver));
+
+// Location: CLKCTRL_G9
+cyclonev_clkena sys_clk_ainputCLKENA0(
+	.inclk(sys_clk_ainputCLKENA0_INCLK_driver),
+	.ena(vcc),
+	.outclk(sys_clk_ainputCLKENA0_outclk),
+	.enaout());
+// synopsys translate_off
+defparam sys_clk_ainputCLKENA0.clock_type = "global clock";
+defparam sys_clk_ainputCLKENA0.disable_mode = "low";
+defparam sys_clk_ainputCLKENA0.ena_register_mode = "always enabled";
+defparam sys_clk_ainputCLKENA0.ena_register_power_up = "high";
+defparam sys_clk_ainputCLKENA0.test_syn = "high";
+// synopsys translate_on
+
+cyclonev_routing_wire pi_money_ainput_I_routing_wire_inst (
+	.datain(pi_money),
+	.dataout(pi_money_ainput_I_driver));
+
+// Location: IOIBUF_X34_Y0_N52
+cyclonev_io_ibuf pi_money_ainput(
+	.i(pi_money_ainput_I_driver),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(pi_money_ainput_o));
+// synopsys translate_off
+defparam pi_money_ainput.bus_hold = "false";
+defparam pi_money_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_routing_wire state_aIDLE_a0_DATAF_routing_wire_inst (
+	.datain(!state_aTWO_aq),
+	.dataout(state_aIDLE_a0_DATAF_driver));
+
+// Location: MLABCELL_X34_Y1_N15
+cyclonev_lcell_comb state_aIDLE_a0(
+// Equation(s):
+// state_aIDLE_a0_combout = ( !state_aTWO_aq )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(state_aIDLE_a0_DATAF_driver),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(state_aIDLE_a0_combout),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam state_aIDLE_a0.extended_lut = "off";
+defparam state_aIDLE_a0.lut_mask = 64'hFFFFFFFF00000000;
+defparam state_aIDLE_a0.shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_routing_wire sys_rst_ainput_I_routing_wire_inst (
+	.datain(sys_rst),
+	.dataout(sys_rst_ainput_I_driver));
+
+// Location: IOIBUF_X34_Y0_N1
+cyclonev_io_ibuf sys_rst_ainput(
+	.i(sys_rst_ainput_I_driver),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(sys_rst_ainput_o));
+// synopsys translate_off
+defparam sys_rst_ainput.bus_hold = "false";
+defparam sys_rst_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_routing_wire state_aIDLE_CLK_routing_wire_inst (
+	.datain(sys_clk_ainputCLKENA0_outclk),
+	.dataout(state_aIDLE_CLK_driver));
+
+cyclonev_routing_wire state_aIDLE_D_routing_wire_inst (
+	.datain(state_aIDLE_a0_combout),
+	.dataout(state_aIDLE_D_driver));
+
+cyclonev_routing_wire state_aIDLE_CLRN_routing_wire_inst (
+	.datain(sys_rst_ainput_o),
+	.dataout(state_aIDLE_CLRN_driver));
+
+cyclonev_routing_wire state_aIDLE_ENA_routing_wire_inst (
+	.datain(pi_money_ainput_o),
+	.dataout(state_aIDLE_ENA_driver));
+
+// Location: FF_X34_Y1_N17
+dffeas state_aIDLE(
+	.clk(state_aIDLE_CLK_driver),
+	.d(state_aIDLE_D_driver),
+	.asdata(vcc),
+	.clrn(state_aIDLE_CLRN_driver),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(state_aIDLE_ENA_driver),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(state_aIDLE_aq),
+	.prn(vcc));
+// synopsys translate_off
+defparam state_aIDLE.is_wysiwyg = "true";
+defparam state_aIDLE.power_up = "low";
+// synopsys translate_on
+
+cyclonev_routing_wire state_aONE_a0_DATAF_routing_wire_inst (
+	.datain(!state_aIDLE_aq),
+	.dataout(state_aONE_a0_DATAF_driver));
+
+// Location: MLABCELL_X34_Y1_N42
+cyclonev_lcell_comb state_aONE_a0(
+// Equation(s):
+// state_aONE_a0_combout = ( !state_aIDLE_aq )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(state_aONE_a0_DATAF_driver),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(state_aONE_a0_combout),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam state_aONE_a0.extended_lut = "off";
+defparam state_aONE_a0.lut_mask = 64'hFFFFFFFF00000000;
+defparam state_aONE_a0.shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_routing_wire state_aONE_CLK_routing_wire_inst (
+	.datain(sys_clk_ainputCLKENA0_outclk),
+	.dataout(state_aONE_CLK_driver));
+
+cyclonev_routing_wire state_aONE_D_routing_wire_inst (
+	.datain(state_aONE_a0_combout),
+	.dataout(state_aONE_D_driver));
+
+cyclonev_routing_wire state_aONE_CLRN_routing_wire_inst (
+	.datain(sys_rst_ainput_o),
+	.dataout(state_aONE_CLRN_driver));
+
+cyclonev_routing_wire state_aONE_ENA_routing_wire_inst (
+	.datain(pi_money_ainput_o),
+	.dataout(state_aONE_ENA_driver));
+
+// Location: FF_X34_Y1_N44
+dffeas state_aONE(
+	.clk(state_aONE_CLK_driver),
+	.d(state_aONE_D_driver),
+	.asdata(vcc),
+	.clrn(state_aONE_CLRN_driver),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(state_aONE_ENA_driver),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(state_aONE_aq),
+	.prn(vcc));
+// synopsys translate_off
+defparam state_aONE.is_wysiwyg = "true";
+defparam state_aONE.power_up = "low";
+// synopsys translate_on
+
+cyclonev_routing_wire state_aTWO_afeeder_DATAF_routing_wire_inst (
+	.datain(!state_aONE_aq),
+	.dataout(state_aTWO_afeeder_DATAF_driver));
+
+// Location: MLABCELL_X34_Y1_N6
+cyclonev_lcell_comb state_aTWO_afeeder(
+// Equation(s):
+// state_aTWO_afeeder_combout = ( state_aONE_aq )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(state_aTWO_afeeder_DATAF_driver),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(state_aTWO_afeeder_combout),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam state_aTWO_afeeder.extended_lut = "off";
+defparam state_aTWO_afeeder.lut_mask = 64'h00000000FFFFFFFF;
+defparam state_aTWO_afeeder.shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_routing_wire state_aTWO_CLK_routing_wire_inst (
+	.datain(sys_clk_ainputCLKENA0_outclk),
+	.dataout(state_aTWO_CLK_driver));
+
+cyclonev_routing_wire state_aTWO_D_routing_wire_inst (
+	.datain(state_aTWO_afeeder_combout),
+	.dataout(state_aTWO_D_driver));
+
+cyclonev_routing_wire state_aTWO_CLRN_routing_wire_inst (
+	.datain(sys_rst_ainput_o),
+	.dataout(state_aTWO_CLRN_driver));
+
+cyclonev_routing_wire state_aTWO_ENA_routing_wire_inst (
+	.datain(pi_money_ainput_o),
+	.dataout(state_aTWO_ENA_driver));
+
+// Location: FF_X34_Y1_N8
+dffeas state_aTWO(
+	.clk(state_aTWO_CLK_driver),
+	.d(state_aTWO_D_driver),
+	.asdata(vcc),
+	.clrn(state_aTWO_CLRN_driver),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(state_aTWO_ENA_driver),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(state_aTWO_aq),
+	.prn(vcc));
+// synopsys translate_off
+defparam state_aTWO.is_wysiwyg = "true";
+defparam state_aTWO.power_up = "low";
+// synopsys translate_on
+
+cyclonev_routing_wire always1_a0_DATAC_routing_wire_inst (
+	.datain(!pi_money_ainput_o),
+	.dataout(always1_a0_DATAC_driver));
+
+cyclonev_routing_wire always1_a0_DATAF_routing_wire_inst (
+	.datain(!state_aTWO_aq),
+	.dataout(always1_a0_DATAF_driver));
+
+// Location: MLABCELL_X34_Y1_N0
+cyclonev_lcell_comb always1_a0(
+// Equation(s):
+// always1_a0_combout = ( state_aTWO_aq & ( pi_money_ainput_o ) )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(always1_a0_DATAC_driver),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(always1_a0_DATAF_driver),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(always1_a0_combout),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam always1_a0.extended_lut = "off";
+defparam always1_a0.lut_mask = 64'h000000000F0F0F0F;
+defparam always1_a0.shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_routing_wire po_cola_areg0_CLK_routing_wire_inst (
+	.datain(sys_clk_ainputCLKENA0_outclk),
+	.dataout(po_cola_areg0_CLK_driver));
+
+cyclonev_routing_wire po_cola_areg0_D_routing_wire_inst (
+	.datain(always1_a0_combout),
+	.dataout(po_cola_areg0_D_driver));
+
+cyclonev_routing_wire po_cola_areg0_CLRN_routing_wire_inst (
+	.datain(sys_rst_ainput_o),
+	.dataout(po_cola_areg0_CLRN_driver));
+
+// Location: FF_X34_Y1_N1
+dffeas po_cola_areg0(
+	.clk(po_cola_areg0_CLK_driver),
+	.d(po_cola_areg0_D_driver),
+	.asdata(vcc),
+	.clrn(po_cola_areg0_CLRN_driver),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(po_cola_areg0_q),
+	.prn(vcc));
+// synopsys translate_off
+defparam po_cola_areg0.is_wysiwyg = "true";
+defparam po_cola_areg0.power_up = "low";
+// synopsys translate_on
+
+// Location: LABCELL_X48_Y13_N0
+cyclonev_lcell_comb a_aQUARTUS_CREATED_GND_aI(
+// Equation(s):
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(a_aQUARTUS_CREATED_GND_aI_combout),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam a_aQUARTUS_CREATED_GND_aI.extended_lut = "off";
+defparam a_aQUARTUS_CREATED_GND_aI.lut_mask = 64'h0000000000000000;
+defparam a_aQUARTUS_CREATED_GND_aI.shared_arith = "off";
+// synopsys translate_on
+
+endmodule

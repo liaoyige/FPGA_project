@@ -1,0 +1,65 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\quartus_work\full_adder\quartus_prj\simulation\modelsim
+vfull_adder_top
+IaX^_5BX<BB>hP>D?^o=EN0
+V>Rd28=bT=SElCWIgcTm^O1
+Z1 dD:\quartus_work\full_adder\quartus_prj\simulation\modelsim
+w1667550288
+8D:/quartus_work/full_adder/rtl/full_adder_top.v
+FD:/quartus_work/full_adder/rtl/full_adder_top.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/quartus_work/full_adder/rtl -O0
+!i10b 1
+!s100 Hl:5JQH]5]J6aPk<DEK>Z2
+!s85 0
+!s108 1667551196.109000
+!s107 D:/quartus_work/full_adder/rtl/full_adder_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/quartus_work/full_adder/rtl|D:/quartus_work/full_adder/rtl/full_adder_top.v|
+!s101 -O0
+vhalf_adder
+IWKPz<a0XA_aeSAL]0Y@^b2
+VHdT3CJJc^T@bP;FCiCBef0
+R1
+w1667544571
+8D:/quartus_work/full_adder/rtl/half_adder.v
+FD:/quartus_work/full_adder/rtl/half_adder.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 V5b?a_6Kf8X;K?A4cmG8O1
+!s85 0
+!s108 1667551196.031000
+!s107 D:/quartus_work/full_adder/rtl/half_adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/quartus_work/full_adder/rtl|D:/quartus_work/full_adder/rtl/half_adder.v|
+!s101 -O0
+vtb_full_adder_top
+!i10b 1
+!s100 `[@NTT=9a7BOXQJb40C]j1
+I<96m?S[9DeGmah1=N`0S50
+VUcgV]ODZH=RMDEj3jSFQ23
+R1
+w1667551088
+8D:/quartus_work/full_adder/quartus_prj/../sim/tb_full_adder_top.v
+FD:/quartus_work/full_adder/quartus_prj/../sim/tb_full_adder_top.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1667551196.203000
+!s107 D:/quartus_work/full_adder/quartus_prj/../sim/tb_full_adder_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/quartus_work/full_adder/quartus_prj/../sim|D:/quartus_work/full_adder/quartus_prj/../sim/tb_full_adder_top.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+D:/quartus_work/full_adder/quartus_prj/../sim -O0

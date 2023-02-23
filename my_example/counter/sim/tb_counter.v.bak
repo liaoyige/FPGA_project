@@ -1,0 +1,29 @@
+`timescale 1ns/1ns
+module tb_counter();
+reg 	sys_clk;
+reg		sys_rst_n;
+wire 	led_out;
+
+initial
+	begin
+		sys_clk 1= 1'b1;		//注意，在写测试函数的时候，时钟信号必须要用
+		sys_rst_n <= 1'b0;		//非阻塞赋值即 sys_clk 1= 1'b1; 否则就会漏拍
+		#20;
+		sys_rst_n <= 1'b1;
+	end
+	
+always #10 sys_clk = ~sys_clk;
+
+counter  counter_inst1
+#
+(
+	.CNT_MA(25'd24)	
+)   
+(   
+	.sys_clk  (sys_clk),
+	.sys_rst_n(sys_rst_n),
+
+	.led_out  (led_out)
+);
+
+endmodule

@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\quartus_work\my_example\counter\quartus_prj\simulation\modelsim
+vcounter
+IR?<8[n?68B34LA5lKF:c;3
+VcNn<2U?Ka`?];]^IWSITZ0
+Z1 dD:\quartus_work\my_example\counter\quartus_prj\simulation\modelsim
+w1667795055
+8D:/quartus_work/my_example/counter/rtl/counter.v
+FD:/quartus_work/my_example/counter/rtl/counter.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 g]5OFT7KeN2oJmS3FaF3j0
+!s85 0
+!s108 1667795074.333000
+!s107 D:/quartus_work/my_example/counter/rtl/counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/quartus_work/my_example/counter/rtl|D:/quartus_work/my_example/counter/rtl/counter.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+D:/quartus_work/my_example/counter/rtl -O0
+vtb_counter
+!i10b 1
+!s100 hiUkclRR=F]oZ>eQ05Snn3
+I;0MWBKXH1ed7LPmDjSjg;0
+VPe>hc8P2Zj0nd^A9H2M030
+R1
+w1667791977
+8D:/quartus_work/my_example/counter/quartus_prj/../sim/tb_counter.v
+FD:/quartus_work/my_example/counter/quartus_prj/../sim/tb_counter.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1667795074.458000
+!s107 D:/quartus_work/my_example/counter/quartus_prj/../sim/tb_counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/quartus_work/my_example/counter/quartus_prj/../sim|D:/quartus_work/my_example/counter/quartus_prj/../sim/tb_counter.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+D:/quartus_work/my_example/counter/quartus_prj/../sim -O0

@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\quartus_work\my_example\decoder\quartus_prj\simulation\modelsim
+vdecoder
+Ii?4M^AMnmdoM1RAZCi_6`3
+VczAETBS?bV5IP4WCQXQ4o0
+Z1 dD:\quartus_work\my_example\decoder\quartus_prj\simulation\modelsim
+w1667611708
+8D:/quartus_work/my_example/decoder/rtl/decoder.v
+FD:/quartus_work/my_example/decoder/rtl/decoder.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 g3geV>Zn@`9XW[QY;zWDb1
+!s85 0
+!s108 1667611872.123000
+!s107 D:/quartus_work/my_example/decoder/rtl/decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/quartus_work/my_example/decoder/rtl|D:/quartus_work/my_example/decoder/rtl/decoder.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+D:/quartus_work/my_example/decoder/rtl -O0
+vtb_decoder
+!i10b 1
+!s100 Nj5[AIQ_Qi1SV=>0edb8a2
+I<[]>JRRM8z;M>]E6K`1F93
+V0ji;jEKYl3?;n9`1EN=Eb3
+R1
+w1667611485
+8D:/quartus_work/my_example/decoder/quartus_prj/../sim/tb_decoder.v
+FD:/quartus_work/my_example/decoder/quartus_prj/../sim/tb_decoder.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1667611872.201000
+!s107 D:/quartus_work/my_example/decoder/quartus_prj/../sim/tb_decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/quartus_work/my_example/decoder/quartus_prj/../sim|D:/quartus_work/my_example/decoder/quartus_prj/../sim/tb_decoder.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+D:/quartus_work/my_example/decoder/quartus_prj/../sim -O0

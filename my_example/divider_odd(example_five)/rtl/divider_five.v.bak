@@ -1,0 +1,32 @@
+module divider_five
+#
+(
+	parameter CNT_5 = 3'd4
+)
+(
+	input reg sys_clk,
+	input reg sys_rst_n,
+	
+	output wire clk_out
+);
+
+reg [1:0]    cnt;
+// reg 	cnt_flag;
+
+always@(negedge sys_clk or negedge sys_rst_n)
+	if(!sys_rst_n)
+		clk_out <= 1'b0;
+	else if(cnt == CNT_5/2)
+		clk_out <= ~clk_out;
+	else
+		clk_out <= clk_out;
+
+always@(posedge sys_clk or negedge sys_rst_n)
+	if(!sys_rst_n)
+		clk_out <=1'b0;
+	else if(cnt == 0)
+		clk_out <= ~clk_out;
+	else
+		clk_out <=clk_out;
+
+endmodule

@@ -1,0 +1,15 @@
+module mux2_1 
+(
+	input wire [0:0] in_1,
+	input wire [0:0] in_2,
+	input wire [0:0] sel,
+	output reg out
+);
+
+always@(sel,in_1,in_2)
+	case(sel)
+		1'b1 : out = in_1;
+		1'b0 : out = in_2;
+	endcase
+
+endmodule

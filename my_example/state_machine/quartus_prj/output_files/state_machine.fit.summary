@@ -1,0 +1,19 @@
+Fitter Status : Successful - Sat Jan 28 13:22:47 2023
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : state_machine
+Top-level Entity Name : state_machine
+Family : Cyclone V
+Device : 5CEBA2F17A7
+Timing Models : Final
+Logic utilization (in ALMs) : 3 / 9,430 ( < 1 % )
+Total registers : 4
+Total pins : 4 / 128 ( 3 % )
+Total virtual pins : 0
+Total block memory bits : 0 / 1,802,240 ( 0 % )
+Total DSP Blocks : 0 / 25 ( 0 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI TX Channels : 0
+Total PLLs : 0 / 4 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )
